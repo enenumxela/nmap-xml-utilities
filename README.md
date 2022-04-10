@@ -1,8 +1,13 @@
 # nmap-utils
 
-* [Merge nmap xml files](#merge-nmap-xml-files)
+Scripts to process nmap results.
 
-## [Merge nmap xml files](./merge-nmap-xml)
+## Scripts
+
+* [Merge nmap xml files](#merge-nmap-xml-filesmerge-nmap-xml)
+* [Parse nmap xml file](#parse-nmap-xml-fileparse-nmap-xml)
+
+### [Merge nmap xml files](./merge-nmap-xml)
 
 Merge Multiple nmap xml output files into a single xml file.
 
@@ -20,6 +25,6 @@ optional arguments:
   -q, --quiet           don't print status messages to stdout
 ```
 
-## [Parse nmap xml file](./parse-nmap-xml)
+### [Parse nmap xml file](./parse-nmap-xml)
 
 Parse nmap xml output file to extract bits of information.
