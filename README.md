@@ -28,3 +28,23 @@ optional arguments:
 ### [Parse nmap xml file](./parse-nmap-xml)
 
 Parse nmap xml output file to extract bits of information.
+
+```bash
+parse-nmap-xml -h
+```
+
+```text
+usage: parse-nmap-xml [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
+
+positional arguments:
+  FILE                  Nmap XML output file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -ips                  list of live ipv4s
+  -ports                list open ports
+  -service SERVICE      service to filter by
+  -service-prefix PREFIX
+                        service prefix to filter by
+  -separator SEPARATOR  output separator
+```
