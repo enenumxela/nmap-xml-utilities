@@ -1,22 +1,22 @@
-# nmap-utils
+# nmap-xml-utilities
 
-Scripts to process nmap results.
+Utilities to process nmap XML output.
 
 ## Scripts
 
-* [Merge nmap xml files](#merge-nmap-xml-filesmerge-nmap-xml)
-* [Parse nmap xml file](#parse-nmap-xml-fileparse-nmap-xml)
+* [Merge nmap xml files](#merge-nmap-xml-filesnmap-merge-xml)
+* [Parse nmap xml file](#parse-nmap-xml-filenmap-parse-xml)
 
-### [Merge nmap xml files](./merge-nmap-xml)
+### [Merge nmap xml files](./nmap-merge-xml)
 
 Merge Multiple nmap xml output files into a single xml file.
 
 ```bash
-merge-nmap-xml -h
+nmap-merge-xml -h
 ```
 
 ```text
-usage: merge-nmap-xml [-h] [-f FILE] [-d DIR] [-q]
+usage: nmap-merge-xml [-h] [-f FILE] [-d DIR] [-q]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -25,16 +25,16 @@ optional arguments:
   -q, --quiet           don't print status messages to stdout
 ```
 
-### [Parse nmap xml file](./parse-nmap-xml)
+### [Parse nmap xml file](./nmap-parse-xml)
 
 Parse nmap xml output file to extract bits of information.
 
 ```bash
-parse-nmap-xml -h
+nmap-parse-xml -h
 ```
 
 ```text
-usage: parse-nmap-xml [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
+usage: nmap-parse-xml [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
 
 positional arguments:
   FILE                  Nmap XML output file
