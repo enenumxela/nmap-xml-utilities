@@ -4,19 +4,27 @@ Utilities to process nmap XML output.
 
 ## Scripts
 
-* [Merge nmap xml files](#merge-nmap-xml-filesnmap-merge-xml)
-* [Parse nmap xml file](#parse-nmap-xml-filenmap-parse-xml)
+* [Merge nmap xml files](#merge-nmap-xml-filesnmap-xml-merge)
+* [Parse nmap xml file](#parse-nmap-xml-filenmap-xml-parse)
 
-### [Merge nmap xml files](./nmap-merge-xml)
+### [Merge nmap xml files](./nmap-xml-merge)
 
 Merge Multiple nmap xml output files into a single xml file.
 
+#### Installation
+
 ```bash
-nmap-merge-xml -h
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/nmap-xml-merge > ~/.local/bin/nmap-xml-merge
+```
+
+#### Uage
+
+```bash
+nmap-xml-merge -h
 ```
 
 ```text
-usage: nmap-merge-xml [-h] [-f FILE] [-d DIR] [-q]
+usage: nmap-xml-merge [-h] [-f FILE] [-d DIR] [-q]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -25,16 +33,24 @@ optional arguments:
   -q, --quiet           don't print status messages to stdout
 ```
 
-### [Parse nmap xml file](./nmap-parse-xml)
+### [Parse nmap xml file](./nmap-xml-parse)
 
 Parse nmap xml output file to extract bits of information.
 
+#### Installation
+
 ```bash
-nmap-parse-xml -h
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/nmap-xml-parse > ~/.local/bin/nmap-xml-parse
+```
+
+#### Uage
+
+```bash
+nmap-xml-parse -h
 ```
 
 ```text
-usage: nmap-parse-xml [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
+usage: nmap-xml-parse [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
 
 positional arguments:
   FILE                  Nmap XML output file
