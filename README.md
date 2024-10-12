@@ -4,27 +4,27 @@ Utilities to process nmap XML output.
 
 ## Scripts
 
-* [Merge nmap xml files](#merge-nmap-xml-filesnmap-xml-merge)
-* [Parse nmap xml file](#parse-nmap-xml-filenmap-xml-parse)
+* [Merge nmap xml files](#merge-nmap-xml-files)
+* [Parse nmap xml file](#parse-nmap-xml-file)
 
-### [Merge nmap xml files](./nmap-xml-merge)
+### [Merge nmap xml files](https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/merge-nmap-xml.py)
 
 Merge Multiple nmap xml output files into a single xml file.
 
 #### Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/nmap-xml-merge > ~/.local/bin/nmap-xml-merge
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/merge-nmap-xml.py > ~/.local/bin/merge-nmap-xml
 ```
 
 #### Uage
 
 ```bash
-nmap-xml-merge -h
+merge-nmap-xml.py -h
 ```
 
 ```text
-usage: nmap-xml-merge [-h] [-f FILE] [-d DIR] [-q]
+usage: merge-nmap-xml [-h] [-f FILE] [-d DIR] [-q]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -33,24 +33,24 @@ optional arguments:
   -q, --quiet           don't print status messages to stdout
 ```
 
-### [Parse nmap xml file](./nmap-xml-parse)
+### [Parse nmap xml file](https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/parse-nmap-xml.py)
 
 Parse nmap xml output file to extract bits of information.
 
 #### Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/nmap-xml-parse > ~/.local/bin/nmap-xml-parse
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/parse-nmap-xml.py > ~/.local/bin/parse-nmap-xml
 ```
 
 #### Uage
 
 ```bash
-nmap-xml-parse -h
+parse-nmap-xml.py -h
 ```
 
 ```text
-usage: nmap-xml-parse [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
+usage: parse-nmap-xml [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
 
 positional arguments:
   FILE                  Nmap XML output file
