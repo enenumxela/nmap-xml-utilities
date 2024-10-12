@@ -14,7 +14,7 @@ Merge Multiple nmap xml output files into a single xml file.
 #### Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/merge-nmap-xml.py > ~/.local/bin/merge-nmap-xml
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/merge-nmap-xml.py > ~/.local/bin/merge-nmap-xml.py && chmod u+x ~/.local/bin/merge-nmap-xml.py
 ```
 
 #### Uage
@@ -40,7 +40,7 @@ Parse nmap xml output file to extract bits of information.
 #### Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/parse-nmap-xml.py > ~/.local/bin/parse-nmap-xml
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/parse-nmap-xml.py > ~/.local/bin/parse-nmap-xml.py && chmod u+x ~/.local/bin/parse-nmap-xml.py
 ```
 
 #### Uage
